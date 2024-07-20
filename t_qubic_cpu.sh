@@ -7,6 +7,7 @@ if [ "$(id -u)" != "0" ]; then
     exit 1
 fi
 
+# 软件更新
 sudo apt update && sudo apt install ufw && apt update -y  && apt install -y curl
 
 # 下载和解压 apoolminer 软件
